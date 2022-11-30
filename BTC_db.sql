@@ -1,0 +1,15 @@
+USE BTC_db;
+CREATE TABLE perp (Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+						TradeDate CHAR(20),
+                        KrakenAskPrice FLOAT(7,2),
+                        KrakenBidPrice FLOAT(7,2),
+                        FtxAsk FLOAT(7,2),
+                        FtxBid FLOAT(7,2),
+                        BinanceAsk FLOAT(7,2),
+                        BinanceBid FLOAT(7,2),
+                        diff_K_F FLOAT(7,5),
+                        diff_F_K FLOAT(7,5),
+                        diff_B_F FLOAT(7,5),
+                        diff_F_B FLOAT(7,5),
+                        diff_B_K FLOAT(7,5),
+                        diff_K_B FLOAT(7,5));						
